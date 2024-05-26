@@ -31,7 +31,7 @@ body{
 .linkcontainer div img{
     height: 200px;
     width: 200px;
-    border: 2px solid transparent;
+    border: 2px solid rgb(8, 8, 8);
     border-radius: 50%;
     align-items: center;
 }
@@ -70,4 +70,61 @@ body{
 .li a :hover {
     color: rgb(43, 179, 43);
     /* cursor: alias; */
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .linkcontainer{
+        background-color: rgb(1, 79, 99);
+        height: 100vh;
+        width: 100%;
+        
+        justify-items: center;
+    
+        /* padding: 8%; */
+        
+        
+    
+    }
+
+    .dp {
+        padding-top: 20%;
+         border: 2px solid transparent;
+         border-radius: 50%;
+        
+    }
+
+
+    .li{
+        margin: auto;
+        margin-top: 8%;
+        margin-bottom: 8%;
+
+        
+    
+        
+        display: flex;
+        justify-items: center; 
+       
+        background-color: rgb(136, 64, 118);
+        height: 40px;
+        width: 300px;
+        border: 2px solid greenyellow;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+       
+    }
+    .lcont{
+        margin-top: 20%;
+    }
+
 }
