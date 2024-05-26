@@ -4,35 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="shortcut icon" href="media/img/faviconrd.png" type="image/x-icon" >
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
+    
 </head>
 <body>
     <div class="container">
-        <h1><a href="linkhub.html"> ROHAN </a></h1>
-        <p>Web Developer | Designer | Creative Enthusiast</p>
-        <!-- Add more sections here (e.g., About Me, Projects, Contact) -->
+      
+      
+        <div class="navbar">
+       <div class="dcon">
+        <img  src="/media/img/dp.jpg" alt="" style="height: 100px;" >
+          <p id="nt"></p>
     </div>
+      
+       <div class="navmenu">
+            
+        <span>|</span>
+        <p><a href="">PORTFOLIO</a></p>
+        <span>|</span>
+        <p><a href="">ABOUT</a></p>
+        <span>|</span>
+            <p><a href="">PROFILES</a></p>
+        </div>
+
+
+      </div>
+    </div>
+    <script>
+        var i = 0;
+        var txt = 'ROHAN.';
+        var speed = 250;
+        
+        function typeWriter() {
+          if (i <= txt.length) {
+            document.getElementById("nt").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+
+          }
+        }
+        typeWriter();
+        </script>
 </body>
 
 </html>
